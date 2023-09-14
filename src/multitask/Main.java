@@ -36,9 +36,9 @@ public class Main {
 
         if (count > 0)
             System.out.println(count + " match(es) of value " +
-                    search + " has found.");
+                    search + " winner.");
         else System.out.println("No match(es) of value " +
-                search + " has found.");
+                search + " try again next time.");
 
     }
 }
