@@ -21,13 +21,9 @@ public class Main {
         // Пошук значення.
         // Перебір за допомогою циклу for-each
         for (int[] nums3 : nums4) {
-            for (int nums2 : nums3) {
-                for (int nums1 : nums2) {
-                    for (int value : nums1) {
+            for (int value : nums3) {
                         if (value == search) {
                             count++;
-                        }
-                    }
                 }
             }
         }
