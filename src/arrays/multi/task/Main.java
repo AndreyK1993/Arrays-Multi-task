@@ -1,4 +1,4 @@
-package multitask;
+package arrays.multi.task;
 
 import java.util.Scanner;
 
