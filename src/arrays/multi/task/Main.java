@@ -3,6 +3,7 @@ package arrays.multi.task;
 import java.util.Scanner;
 
 public class Main {
+    private static final int WIN_NUM=27;
 
     public static void main(String[] args) {
 
@@ -12,7 +13,7 @@ public class Main {
                 {5, 16, 23, 56}, {3, 27, 52, 84},
                 {76, 43, 69, 92}, {8, 11, 33, 55}
         };
-        int count = 0;
+        boolean isWin=false;
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter searching int value: ");
@@ -22,16 +23,17 @@ public class Main {
         // Перебір за допомогою циклу for-each
         for (int[] nums3 : nums4) {
             for (int value : nums3) {
-                        if (value == search) {
-                            count++;
+                        if (value == WIN_NUM & search==WIN_NUM) {
+                            isWin = true;
+                            break;
                 }
             }
         }
 
-        if (search == 11)
-            System.out.println(count + " match(es) of value " +
+        if (isWin)
+            System.out.println(" match(es) of value " +
                     search + " you are winner.");
-        else System.out.println(count + " match(es) of value " +
+        else System.out.println(" match(es) of value " +
                 search + " you are not winner.");
 
     }
