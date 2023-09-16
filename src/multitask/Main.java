@@ -28,11 +28,11 @@ public class Main {
             }
         }
 
-        if (count > 0)
+        if (search == 11)
             System.out.println(count + " match(es) of value " +
-                    search + " winner.");
-        else System.out.println("No match(es) of value " +
-                search + " try again next time.");
+                    search + " you are winner.");
+        else System.out.println(count + " match(es) of value " +
+                search + " you are not winner.");
 
     }
 }
